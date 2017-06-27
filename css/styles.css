@@ -1,0 +1,183 @@
+/*fonts*/
+@font-face {
+  font-family: 'Russian';
+  src: url('Russian.ttf');
+}
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', 'Russian';
+}
+
+/*main*/
+body {
+	font-family: 'Russian','Inconsolata', monospace;
+	color: #dd4124;   /*tangerine orange*/ 
+	background-color: #3b3b48;   /*graphite*/
+	min-width: 100vw;
+  min-height: 100vh;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+a {
+    color: #dd4124;   /*tangerine orange*/ 
+}
+
+
+a:hover {
+    color: #efc050;   /*mimosa*/
+}
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("/Users/dariadmitrochenko/Desktop/portfolio/images/main-2.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-logo {
+width: 70px;
+float: left; 
+}
+
+h1 {
+  margin-top: 0;
+
+}
+
+div .project {
+  height: 475px;
+  margin-bottom: 20px;
+}
+
+/*center span at the bottom of the div*/
+span{
+  position:absolute;
+  width:100%;
+  bottom:0px;
+  right:25%;
+  left:50%;
+  margin-left:-50%;
+}
+
+/*make project description appear on hover*/
+figure img {
+ opacity: 1;
+ transition: opacity 0.15s linear; /*-webkit-transition for Chrome/Safari, -moz-transition for Firefox and -o-transition for Opera*/
+}
+
+figure:hover img {
+ opacity:0;
+ 
+}
+figure {
+    position: relative;
+    display: inline-block;
+}
+
+figcaption {
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 20px;
+    right: 0;
+    font-size: 140%;
+    margin: 2px;
+}
+
+figure:hover figcaption {
+    display: block;
+}
+
+/*footer*/
+footer {
+    margin: 3em;
+}
+
+
+[class*="zocial-"]:before {
+  color: #dd4124;   /*tangerine orange*/
+  display: inline-block;
+  font-family: 'zocial', Russian;
+  width: 2em;
+  font-size: 2em;
+}
+
+a:hover [class*="zocial-"]:before {
+  color: #efc050;   /*mimosa*/
+}
+
+
+div#social a {
+  margin: 0 3em 0 0;
+}
+
+
+div#social a:last-of-type {
+  margin: 0;
+}
+
+div #msg {
+  opacity: 1;
+  text-align: center;
+  max-height: 100%;
+
+}
+
+
+/*media queries for parallax with js*/
+
+/*mobile*/
+@media only screen and (max-width: 425px) {
+
+  div #msg { 
+    font-size: 30px; }
+
+}
+
+/*tablets*/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+  div #msg { 
+    font-size: 40px; }
+
+}
+
+/*laptop*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  div #msg { 
+    font-size: 60px; }
+
+}
+
+/*desktop*/
+@media only screen and (min-width: 1025px){
+
+  div #msg { 
+    font-size: 70px; }
+
+}
+
+
+
+
+
+
+
+
+

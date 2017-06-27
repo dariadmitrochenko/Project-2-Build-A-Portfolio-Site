@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+ 	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+ 	<title>Дарья</title>
+  <link rel="icon" sizes= "192x192" href="images/letterD.png">
+
+  <!-- Font -->
+ 	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+ 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <!-- JS -->
+ 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+ <!-- main -->
+<body>
+  <!--Main parallax wrapper-->
+  <div class="parallax col-12">
+
+    <div id="msg">
+      <script>
+      var showText = function (target, message, index, interval) { 
+        if (index < message.length) {
+          $(target).append(message[index++]);
+          setTimeout(function () { showText(target, message, index, interval); }, interval);
+        }
+      }
+      $(function () {
+      showText("#msg", "Hi, my name is Daria. Raised by the 90's and Russian Literature and Art, I live in Brooklyn, NY, and study to become a Full Stack Developer. Scroll down to see what I've done so far", 0, 100);
+    });
+      </script>
+    </div>
+
+  </div>
+
+  <!-- grid -->
+  <header>
+  <div class="container">
+  <div class="row">
+
+ 			<div class="col-6 col-xs-4">
+ 				<img class="title-logo img-responsive" src="images/lubokcat.png" alt="Cat Lubok">
+ 			</div>
+
+ 			<div class="col-6 col-xs-8 text-right text-uppercase">
+ 				<h1 class="title">Daria Dmitrochenko</h1>
+ 				<h4>Full Stack Web Developer</h4>
+ 			</div>
+  </div>
+  </div>
+
+  </header>
+
+
+ 		<div class="row text-center">
+ 		  <div class="col-12">
+ 				<h2>Featured work</h2>
+ 			</div>
+    </div>
+
+    <div class="container">
+
+      <!-- Project-1 -->
+ 			<div class="project col-12 col-sm-6 col-md-4 col-lg-4 text-center"> 
+          <figure>
+          <picture>
+            <source media="(min-width: 992px)" srcset="images/lef-1-250_large.jpg" />
+            <source media="(min-width: 768px)" srcset="images/lef-1-250_medium.jpg" />
+            <img src="images/lef-1-250_small.jpg" alt="Movie Trailer Website">
+          </picture>
+ 					<figcaption>
+            Python program that stores a list of my favorite movies, including box art imagery, a movie trailer URL and a storyline. This data is then served as a web page allowing visitors to review the movies and watch the trailers.
+          </figcaption>
+          </figure>
+ 					<h3 class="text-uppercase"><a href="https://github.com/dariadmitrochenko/Project-1-Movie-Trailer-Website">Project 1: Movie Trailer Website</a></h3>
+            <br>
+            <span>Python, HTML, CSS</span>
+      </div>
+
+      <!-- Project-2-->
+ 			<div class="project col-12 col-sm-6 col-md-4 col-lg-4 text-center">
+          <figure>
+          <picture>
+ 					  <source media="(min-width: 992px)" srcset="images/lef-2-250_large.jpg" />
+            <source media="(min-width: 768px)" srcset="images/lef-2-250_medium.jpg" />
+            <img src="images/lef-2-250_small.jpg" alt="Portfolio Website">
+          </picture>
+          <figcaption>
+            A responsive website that will display images, descriptions and links to each of the portfolio projects completed throughout the course of the Full Stack Developer Nanodegree.
+        </figcaption>
+        </figure>
+        <h3 class="text-uppercase"><a href="https://github.com/dariadmitrochenko/Project-2-Build-a-Portfolio-Site">Project 2: Build A Portfolio Site</a></h3>
+          <br>
+          <span>HTML, CSS, JavaScript, Grunt</span>
+ 			</div>
+
+      <!-- Project-3 -->
+ 			<div class="project col-12 col-sm-6 col-md-4 col-lg-4 text-center">
+        <figure>
+        <picture>
+          <source media="(min-width: 992px)" srcset="images/lef-3-250_large.jpg" />
+          <source media="(min-width: 768px)" srcset="images/lef-3-250_medium.jpg" />
+          <img src="images/lef-3-250_small.jpg" alt="Logs Analysis">
+        </picture>
+          <figcaption>
+          Data analysis from the logs of a web service to answer questions such as "What is the most popular page?" and "When was the error rate high?" using advanced SQL queries.
+         </figcaption>
+        </figure>
+        <h3 class="text-uppercase"><a href="https://github.com/dariadmitrochenko/Project-3-Logs-Analysis">Project 3: Logs Analysis</a></h3>
+          <br>
+          <span>SQL</span>
+      </div>
+
+      <!-- Project-4 -->
+        <div class="project col-12 col-sm-6 col-md-4 col-lg-4 text-center">
+        <figure>
+        <picture>
+          <source media="(min-width: 992px)" srcset="images/lef-4-250_large.jpg" />
+          <source media="(min-width: 768px)" srcset="images/lef-4-250_medium.jpg" />
+          <img src="images/lef-4-250_small.jpg" alt="Item Catolog">
+        </picture>
+          <figcaption>
+          <p>An application that provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users have the ability to post, edit and delete their own items.</p>
+        </figcaption>
+        </figure>
+        <h3 class="text-uppercase"><a href="https://github.com/dariadmitrochenko/Project-4-Item-Catalog">Project 4: Item Catalog</a></h3>
+          <br>
+          <span>OAuth 2.0, Python</span>
+        </div>
+
+      <!-- Project-5 -->
+        <div class="project col-12 col-sm-6 col-md-4 col-lg-4 text-center">
+        <figure>
+        <picture>
+          <source media="(min-width: 992px)" srcset="images/lef-5-250_large.jpg" />
+          <source media="(min-width: 768px)" srcset="images/lef-5-250_medium.jpg" />
+          <img src="images/lef-5-250_small.jpg" alt="Neighborhood Map">
+        </picture>
+          <figcaption>
+            <p>A single-page application featuring a map of my neighborhood with additional functionality, including: map markers to identify popular locations, a search function to easily discover these locations,a listview to support simple browsing of all locations.</p>
+          </figcaption>
+          </figure>
+          <h3 class="text-uppercase"><a href="https://github.com/dariadmitrochenko/Project-5-Neighborhood-Map">Project 5: Neighborhood Map</a></h3>
+          <br>
+          <span>AJAX, JavaScript</span>
+        </div>
+
+      <!-- Project-6 -->
+        <div class="project col-12 col-sm-6 col-md-4 col-lg-4 text-center">
+        <figure>
+        <picture>
+          <source media="(min-width: 992px)" srcset="images/lef-6-250_large.jpg" />
+          <source media="(min-width: 768px)" srcset="images/lef-6-250_medium.jpg" />
+          <img src="images/lef-6-250_small.jpg" alt="Linux Server Configuration">
+        </picture>
+          <figcaption>
+          <p>A baseline installation of a Linux distribution on a virtual machine to prepare it to host web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers.</p>
+          </figcaption>
+        </figure>
+        <h3 class="text-uppercase"><a href="https://github.com/dariadmitrochenko/Project-6-Linux-Server-Configuration">Project 6: Linux Server Configuration</a></h3>
+          <br>
+          <span>Linux, Ubuntu</span>
+        </div>
+
+      <footer>
+        <div class="row">
+
+          <div id="social" class="col-12 text-center">
+          <a href="https://www.linkedin.com/in/daria-dmitrochenko-1a037b69/" class="zocial-linkedin">Linkedin
+          </a>
+          <a href="https://github.com/dariadmitrochenko" class="zocial-github">Github</a>
+          </div>
+
+        </div>
+      </footer>
+    </div>
+</body>
+</html>
